@@ -1,6 +1,6 @@
 .dashboard-page {
   min-height: 100vh;
-  background: #f5f5f5;
+  background: #f8f9fa;
 }
 
 .dashboard-header {
@@ -9,7 +9,8 @@
   align-items: center;
   padding: 16px 48px;
   background: white;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .header-left {
@@ -37,8 +38,11 @@
 
 .logo-text {
   font-size: 20px;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .nav-menu {
@@ -50,7 +54,7 @@
   padding: 8px 16px;
   background: transparent;
   border: none;
-  color: #666;
+  color: #64748b;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
@@ -60,12 +64,13 @@
 }
 
 .nav-item:hover {
-  color: #1a1a1a;
-  background: #f5f5f5;
+  color: #1e293b;
+  background: #f8fafc;
 }
 
 .nav-item.active {
-  color: #764ba2;
+  color: #7c3aed;
+  font-weight: 600;
 }
 
 .nav-item.active::after {
@@ -74,8 +79,9 @@
   bottom: -17px;
   left: 0;
   right: 0;
-  height: 2px;
-  background: #764ba2;
+  height: 3px;
+  background: #7c3aed;
+  border-radius: 3px 3px 0 0;
 }
 
 .header-right {
@@ -115,14 +121,15 @@
 
 .page-header h1 {
   font-size: 32px;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-weight: 700;
+  color: #1a1a2e !important;
   margin-bottom: 8px;
 }
 
 .page-subtitle {
   font-size: 15px;
-  color: #666;
+  color: #64748b !important;
+  font-weight: 400;
 }
 
 .dashboard-grid {
